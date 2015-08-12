@@ -23,6 +23,12 @@ public class BotRequest {
 	private String command = null;
 	private MultipartEntityBuilder requestEntity = null;
 
+	/**
+	 * Send a message to Telegram. This could be a text, image, audio, ...
+	 * message.
+	 * 
+	 * @param message
+	 */
 	public BotRequest(Message message) {
 		this.command = message.getCommand();
 
@@ -41,6 +47,9 @@ public class BotRequest {
 			break;
 
 		case IMAGE_MESSAGE:
+		case DOCUMENT_MESSAGE:
+		case AUDIO_MESSAGE:
+		case VIDEO_MESSAGE:
 			requestEntity.addBinaryBody(message.getJsonKey(), (File) message.getMessage());
 			break;
 
@@ -50,23 +59,51 @@ public class BotRequest {
 		}
 	}
 
+	/**
+	 * Used for UpdateRequests. With this, the Bot can ask the Telegram API for
+	 * Updates.
+	 * 
+	 * @param updateRequest
+	 */
 	public BotRequest(UpdateRequest updateRequest) {
 		this.command = updateRequest.getCommand();
 		this.requestEntity = updateRequest.getRequestEntity();
 	}
 
+	/**
+	 * Used by the Bot to get the request command.
+	 * 
+	 * @return
+	 */
 	public String getCommand() {
 		return command;
 	}
 
-	public void setCommand(String command) {
-		this.command = command;
-	}
-
+	/**
+	 * Used by the class Bot to get the content for the post query.
+	 * 
+	 * @return
+	 */
 	public MultipartEntityBuilder getContent() {
 		return requestEntity;
 	}
 
+	/**
+	 * Use this only if you know what you do and when you deeply modify the
+	 * command for the request.
+	 * 
+	 * @param command
+	 */
+	public void setCommand(String command) {
+		this.command = command;
+	}
+
+	/**
+	 * Use this only if you know what you do and when you deeply modify the
+	 * content for the request.
+	 * 
+	 * @param content
+	 */
 	public void setContent(MultipartEntityBuilder content) {
 		this.requestEntity = content;
 	}
