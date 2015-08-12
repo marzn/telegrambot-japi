@@ -1,0 +1,28 @@
+{
+	"message_id":547,
+	"from":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"chat":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"date":1439333476,
+	"photo":[
+		{
+			"file_id":"AgADBAAD_akxG2MfeAAB5hgiqZX29Kj4CGswAARyvIRKidWQpFhiAAIC",
+			"file_size":789,
+			"width":90,
+			"height":27
+		},
+		{
+			"file_id":"AgADBAAD_akxG2MfeAAB5hgiqZX29Kj4CGswAASfc9iAh4qMpVdiAAIC",
+			"file_size":2682,
+			"width":209,
+			"height":62
+		}	
+	]
+}

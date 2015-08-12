@@ -1,0 +1,20 @@
+{
+	"message_id":548,
+	"from":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"chat":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"date":1439333529,
+	"audio":{
+		"duration":1,
+		"mime_type":"audio\/ogg",
+		"file_id":"AwADBAADawADYx94AAEBLoNiv82GrQI",
+		"file_size":487
+	}
+}

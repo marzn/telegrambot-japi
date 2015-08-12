@@ -1,0 +1,15 @@
+{
+	"message_id":546,
+	"from":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"chat":{
+		"id":7872355,
+		"first_name":"Marcel",
+		"username":"Marcn"
+	},
+	"date":1439330638,
+	"text":"hi"
+}
