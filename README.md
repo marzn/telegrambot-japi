@@ -4,6 +4,8 @@
 
 This software is still under development and need some more time to be finished. But it is already working nice, so we want to share the software with you. If you want, feel free to contribute.
 
+Stay updated with our [changelog](https://github.com/marzn/telegrambot-japi/blob/master/CHANGELOG.md).
+
 ## HowTo get the software
 
 ### Clone the repository (recommended)
@@ -14,7 +16,7 @@ git clone https://github.com/marzn/telegrambot-japi.git
 
 ### Just download a jar
 
-Have a look into https://github.com/marzn/telegrambot-japi/tree/master/bin
+Have a look at our [builds](https://github.com/marzn/telegrambot-japi/tree/master/builds).
 
 ## HowTo use the software
 

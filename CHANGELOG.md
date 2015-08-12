@@ -15,5 +15,5 @@ All notable changes to this project will be documented in this file.
 - Send /receive messages
 - Subscribe receiver
 
-[unreleased]: https://github.com/marzn/telegrambot-japi/compare/0.9.0...master
-[0.9.0]: https://github.com/marzn/telegrambot-japi/compare/0.1.0...0.9.0
+[unreleased]: https://github.com/marzn/telegrambot-japi/compare/v0.9.0...master
+[0.9.0]: https://github.com/marzn/telegrambot-japi/compare/89256a6...v0.9.0
