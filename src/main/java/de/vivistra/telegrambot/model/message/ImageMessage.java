@@ -77,6 +77,6 @@ public class ImageMessage extends Message {
 	 * @return
 	 */
 	public PhotoSize[] getPhotoSize() {
-		return (PhotoSize[]) this.message;
+		return (this.message instanceof PhotoSize[]) ? (PhotoSize[]) this.message : null;
 	}
 }

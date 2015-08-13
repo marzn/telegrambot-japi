@@ -85,6 +85,7 @@ public class TestMessageFactory {
 
 		PhotoSize[] messageContent = imageMessage.getPhotoSize();
 
+		assertNotNull(messageContent);
 		assertEquals(photoSize.length, messageContent.length);
 
 		for (int i = 0; i < messageContent.length; i++) {
