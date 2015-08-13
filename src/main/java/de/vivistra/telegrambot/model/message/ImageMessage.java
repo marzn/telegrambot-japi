@@ -67,7 +67,16 @@ public class ImageMessage extends Message {
 	 * @return
 	 */
 	@Override
-	public PhotoSize[] getMessage() {
+	public Object getMessage() {
+		return this.message;
+	}
+
+	/**
+	 * Get message as PhotoSize
+	 * 
+	 * @return
+	 */
+	public PhotoSize[] getPhotoSize() {
 		return (PhotoSize[]) this.message;
 	}
 }

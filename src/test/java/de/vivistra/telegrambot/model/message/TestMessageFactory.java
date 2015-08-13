@@ -83,7 +83,7 @@ public class TestMessageFactory {
 				new PhotoSize("AgADBAAD_akxG2MfeAAB5hgiqZX29Kj4CGswAARyvIRKidWQpFhiAAIC", 90, 27, 789),
 				new PhotoSize("AgADBAAD_akxG2MfeAAB5hgiqZX29Kj4CGswAASfc9iAh4qMpVdiAAIC", 209, 62, 2682) };
 
-		PhotoSize[] messageContent = imageMessage.getMessage();
+		PhotoSize[] messageContent = imageMessage.getPhotoSize();
 
 		assertEquals(photoSize.length, messageContent.length);
 
