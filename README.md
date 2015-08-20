@@ -88,7 +88,7 @@ private Launcher() throws Exception {
 	BotSettings.setApiToken("<Your TelegramAPI token here>");
 
 	// Create an IReceiverService object
-	GetLosung getMessage = new GetLosung();
+	GetMessage getMessage = new GetMessage();
 
 	// Subscribe the receiver
 	Receiver.subscribe(getMessage);
@@ -96,3 +96,9 @@ private Launcher() throws Exception {
 ```
 
 And for sure you can combine these two code examples, this was only how to get started.
+
+## Projects using this software
+
+[LosungsBot](https://github.com/dipdi/losungsbot)
+
+Tell me, if you wanna have your project listed here =)
