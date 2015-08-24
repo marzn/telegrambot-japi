@@ -71,7 +71,6 @@ public class ImageMessage extends Message {
 		return this.message;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * Get message as PhotoSize
 	 * 
@@ -79,10 +78,5 @@ public class ImageMessage extends Message {
 	 */
 	public PhotoSize[] getPhotoSize() {
 		return (this.message instanceof PhotoSize[]) ? (PhotoSize[]) this.message : null;
-=======
-	public PhotoSize[] getPhotoSize() {
-		// TODO Auto-generated method stub
-		return (PhotoSize[]) this.message;
->>>>>>> Stashed changes
 	}
 }
