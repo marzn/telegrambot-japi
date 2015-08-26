@@ -1,6 +1,8 @@
 # TelegramBot JavaAPI
 
-## Project status
+![Build state](https://api.travis-ci.org/marzn/telegrambot-japi.svg "Build state")
+
+## Project state
 
 This software is still under development and need some more time to be finished. But it is already working nice, so we want to share the software with you. If you want, feel free to contribute.
 
