@@ -1,9 +1,6 @@
 package de.vivistra.telegrambot.model.message;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
@@ -11,10 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 import org.junit.Test;
 
-import de.vivistra.telegrambot.model.Audio;
-import de.vivistra.telegrambot.model.Document;
-import de.vivistra.telegrambot.model.PhotoSize;
-import de.vivistra.telegrambot.model.User;
+import de.vivistra.telegrambot.model.*;
 
 public class TestMessageFactory {
 	private static final Logger LOG = LogManager.getLogger();
