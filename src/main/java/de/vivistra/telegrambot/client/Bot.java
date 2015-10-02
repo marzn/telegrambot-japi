@@ -1,8 +1,6 @@
 package de.vivistra.telegrambot.client;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.SocketException;
 
 import javax.net.ssl.SSLContext;
@@ -17,6 +15,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.JSONException;
 
 import de.vivistra.telegrambot.settings.BotSettings;
 
@@ -124,7 +123,7 @@ public class Bot {
 				// Was successful, do not retry!
 				retryCounter = RETRY_ATTEMPS;
 
-			} catch (SocketException e) {
+			} catch (SocketException | JSONException e) {
 				LOG.warn("Run in SocketException. Attemp: " + (retryCounter + 1) + "/" + RETRY_ATTEMPS);
 
 				// Close old httpsClient
@@ -134,9 +133,9 @@ public class Bot {
 					LOG.warn("Wanna retry, but I failed to close old httpClient.");
 				}
 
-				// Timeout first 0s, then 1s, 2s, 3s, ...
+				// Timeout first 0s, then 1s, 4s, 9s, 16s, 25s, ...
 				try {
-					Thread.sleep(retryCounter * 1000);
+					Thread.sleep(retryCounter * retryCounter * 1000);
 				} catch (InterruptedException exs) {
 					LOG.debug("Thread sleep interrupted");
 				}
