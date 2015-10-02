@@ -29,7 +29,7 @@ public class TestMessageFactory {
 
 		} catch (Exception e) {
 			LOG.error("could not read file (" + filename + ")");
-			assertTrue(false);
+			fail();
 		}
 
 		return new JSONObject(content);
