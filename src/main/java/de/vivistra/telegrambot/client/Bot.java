@@ -27,7 +27,7 @@ public class Bot {
 	private static final Logger LOG = LogManager.getLogger();
 	private static String API_URL_WITH_TOKEN = BotSettings.getApiUrlWithToken();
 
-	private static final Integer RETRY_ATTEMPS = 10;
+	private static final Integer RETRY_ATTEMPS = 100;
 
 	private CloseableHttpClient httpsClient;
 
