@@ -113,4 +113,44 @@ public class PhotoSize {
 		return true;
 	}
 
+    public String getFileId()
+    {
+        return fileId;
+    }
+
+    public void setFileId(String aFileId)
+    {
+        fileId = aFileId;
+    }
+
+    public Integer getWidth()
+    {
+        return width;
+    }
+
+    public void setWidth(Integer aWidth)
+    {
+        width = aWidth;
+    }
+
+    public Integer getHeight()
+    {
+        return height;
+    }
+
+    public void setHeight(Integer aHeight)
+    {
+        height = aHeight;
+    }
+
+    public Integer getFileSize()
+    {
+        return fileSize;
+    }
+
+    public void setFileSize(Integer aFileSize)
+    {
+        fileSize = aFileSize;
+    }
+
 }

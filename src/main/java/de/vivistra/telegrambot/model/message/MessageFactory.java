@@ -65,16 +65,17 @@ public class MessageFactory {
 		}
 
 		// Contact
-		// else if (messageObject.keySet().contains("contact")) {
-		// message = new ContactMessage(recipient,
-		// messageObject.getString("contact"));
-		// }
+		 else if (messageObject.keySet().contains(ContactMessage.JSON_KEY)) {
+		 Contact contact= Contact.fromJSON(messageObject.getJSONObject(ContactMessage.JSON_KEY));
+		 message = new ContactMessage(recipient, contact);
+		 }
 
 		// Location
-		// else if (messageObject.keySet().contains("location")) {
-		// message = new LocationMessage(recipient,
-		// messageObject.getString("location"));
-		// }
+		 else if (messageObject.keySet().contains(LocationMessage.JSON_KEY)) {
+	     Location location = Location.fromJSON(messageObject.getJSONObject(LocationMessage.JSON_KEY));
+		 message = new LocationMessage(recipient,
+		 location);
+		 }
 
 		// Some other Message
 		else {

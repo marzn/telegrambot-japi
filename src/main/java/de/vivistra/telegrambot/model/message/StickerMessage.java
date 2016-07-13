@@ -58,7 +58,7 @@ public class StickerMessage extends Message {
 	 */
 	@Override
 	public MessageType getMessageType() {
-		return MessageType.IMAGE_MESSAGE;
+		return MessageType.STICKER_MESSAGE;
 	}
 
 	/**

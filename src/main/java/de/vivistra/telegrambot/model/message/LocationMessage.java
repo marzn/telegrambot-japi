@@ -2,20 +2,13 @@ package de.vivistra.telegrambot.model.message;
 
 import java.io.File;
 
+import de.vivistra.telegrambot.model.Location;
+
 public class LocationMessage extends Message {
 
 	private static final String COMMAND = "sendLocation";
 	public static final String JSON_KEY = "location";
 
-	/**
-	 * Creates a message
-	 * 
-	 * @param recipient
-	 * @param message
-	 */
-	public LocationMessage(Integer recipient, File message) {
-		super(recipient, message);
-	}
 
 	/**
 	 * Creates a message from String
@@ -23,7 +16,7 @@ public class LocationMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public LocationMessage(Integer recipient, String message) {
+	public LocationMessage(Integer recipient, Location message) {
 		super(recipient, message);
 	}
 
@@ -56,7 +49,7 @@ public class LocationMessage extends Message {
 	 */
 	@Override
 	public MessageType getMessageType() {
-		return MessageType.IMAGE_MESSAGE;
+		return MessageType.LOCATION_MESSAGE;
 	}
 
 	/**
@@ -65,7 +58,7 @@ public class LocationMessage extends Message {
 	 * @return
 	 */
 	@Override
-	public File getMessage() {
-		return (File) this.message;
+	public Location getMessage() {
+		return (Location) this.message;
 	}
 }

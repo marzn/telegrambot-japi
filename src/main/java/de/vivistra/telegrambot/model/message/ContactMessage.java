@@ -2,20 +2,12 @@ package de.vivistra.telegrambot.model.message;
 
 import java.io.File;
 
+import de.vivistra.telegrambot.model.Contact;
+
 public class ContactMessage extends Message {
 
 	private static final String COMMAND = "sendContact";
 	public static final String JSON_KEY = "contact";
-
-	/**
-	 * Creates a message
-	 * 
-	 * @param recipient
-	 * @param message
-	 */
-	public ContactMessage(Integer recipient, File message) {
-		super(recipient, message);
-	}
 
 	/**
 	 * Creates a message from String
@@ -23,8 +15,8 @@ public class ContactMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public ContactMessage(Integer recipient, String message) {
-		super(recipient, message);
+	public ContactMessage(Integer recipient, Contact contact) {
+		super(recipient, contact);
 	}
 
 	/**
@@ -56,7 +48,7 @@ public class ContactMessage extends Message {
 	 */
 	@Override
 	public MessageType getMessageType() {
-		return MessageType.IMAGE_MESSAGE;
+		return MessageType.CONTACT_MESSAGE;
 	}
 
 	/**
@@ -65,7 +57,7 @@ public class ContactMessage extends Message {
 	 * @return
 	 */
 	@Override
-	public File getMessage() {
-		return (File) this.message;
+	public Contact getMessage() {
+		return (Contact) this.message;
 	}
 }
