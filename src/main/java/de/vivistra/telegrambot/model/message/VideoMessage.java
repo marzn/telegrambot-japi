@@ -56,7 +56,7 @@ public class VideoMessage extends Message {
 	 */
 	@Override
 	public MessageType getMessageType() {
-		return MessageType.IMAGE_MESSAGE;
+		return MessageType.VIDEO_MESSAGE;
 	}
 
 	/**

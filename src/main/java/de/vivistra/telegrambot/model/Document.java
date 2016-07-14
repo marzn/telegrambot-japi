@@ -127,4 +127,44 @@ public class Document {
 		return true;
 	}
 
+    public String getFileId()
+    {
+        return fileId;
+    }
+
+    public void setFileId(String aFileId)
+    {
+        fileId = aFileId;
+    }
+
+    public String getFileName()
+    {
+        return fileName;
+    }
+
+    public void setFileName(String aFileName)
+    {
+        fileName = aFileName;
+    }
+
+    public String getMimeType()
+    {
+        return mimeType;
+    }
+
+    public void setMimeType(String aMimeType)
+    {
+        mimeType = aMimeType;
+    }
+
+    public Integer getFileSize()
+    {
+        return fileSize;
+    }
+
+    public void setFileSize(Integer aFileSize)
+    {
+        fileSize = aFileSize;
+    }
+
 }

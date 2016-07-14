@@ -58,7 +58,7 @@ public class DocumentMessage extends Message {
 	 */
 	@Override
 	public MessageType getMessageType() {
-		return MessageType.IMAGE_MESSAGE;
+		return MessageType.DOCUMENT_MESSAGE;
 	}
 
 	/**
