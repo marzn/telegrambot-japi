@@ -9,7 +9,7 @@ import de.vivistra.telegrambot.utils.Assert;
  */
 public class GroupChat {
 	// Unique identifier for this group chat
-	private Integer id;
+	private Long id;
 	// Group name
 	private String title;
 
@@ -19,7 +19,7 @@ public class GroupChat {
 	 * @param id
 	 * @param title
 	 */
-	public GroupChat(int id, String title) {
+	public GroupChat(long id, String title) {
 		Assert.notEmpty(title);
 
 		this.id = id;
@@ -39,7 +39,7 @@ public class GroupChat {
 			return null;
 		}
 
-		Integer id = chatObject.getInt("id");
+		Long id = chatObject.getLong("id");
 		String title = chatObject.getString("title");
 
 		return new GroupChat(id, title);
@@ -50,7 +50,7 @@ public class GroupChat {
 	 * 
 	 * @return
 	 */
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
