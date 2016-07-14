@@ -50,4 +50,19 @@ public class Sticker {
 		return new Sticker(fileId, width, height, thumb, fileSize);
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Sticker sticker = (Sticker) o;
+
+		return fileId.equals(sticker.fileId);
+
+	}
+
+	@Override
+	public int hashCode() {
+		return fileId.hashCode();
+	}
 }
