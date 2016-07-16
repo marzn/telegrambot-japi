@@ -15,7 +15,7 @@ public class DocumentMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public DocumentMessage(Integer recipient, File message) {
+	public DocumentMessage(Long recipient, File message) {
 		super(recipient, message);
 	}
 
@@ -25,7 +25,7 @@ public class DocumentMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public DocumentMessage(Integer recipient, Document message) {
+	public DocumentMessage(Long recipient, Document message) {
 		super(recipient, message);
 	}
 

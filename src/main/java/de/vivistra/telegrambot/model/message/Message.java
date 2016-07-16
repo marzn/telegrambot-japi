@@ -10,7 +10,7 @@ public abstract class Message {
 	private static final Logger LOG = LogManager.getLogger();
 
 	// The recipient of the message
-	protected Integer recipient;
+	protected Long recipient;
 	// The content of the message
 	protected Object message;
 	// Type of the message
@@ -39,7 +39,7 @@ public abstract class Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public Message(Integer recipient, Object message) {
+	public Message(Long recipient, Object message) {
 		this.recipient = recipient;
 		this.message = message;
 	}
@@ -69,7 +69,7 @@ public abstract class Message {
 	 * 
 	 * @return
 	 */
-	public Integer getRecipient() {
+	public Long getRecipient() {
 		return this.recipient;
 	}
 

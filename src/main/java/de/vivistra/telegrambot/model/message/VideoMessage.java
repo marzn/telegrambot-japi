@@ -13,7 +13,7 @@ public class VideoMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public VideoMessage(Integer recipient, File message) {
+	public VideoMessage(Long recipient, File message) {
 		super(recipient, message);
 	}
 
@@ -23,7 +23,7 @@ public class VideoMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public VideoMessage(Integer recipient, String message) {
+	public VideoMessage(Long recipient, String message) {
 		super(recipient, message);
 	}
 

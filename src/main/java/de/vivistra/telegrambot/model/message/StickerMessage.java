@@ -15,7 +15,7 @@ public class StickerMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public StickerMessage(Integer recipient, File message) {
+	public StickerMessage(Long recipient, File message) {
 		super(recipient, message);
 	}
 
@@ -25,7 +25,7 @@ public class StickerMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public StickerMessage(Integer recipient, Sticker message) {
+	public StickerMessage(Long recipient, Sticker message) {
 		super(recipient, message);
 	}
 

@@ -16,7 +16,7 @@ public class LocationMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public LocationMessage(Integer recipient, Location message) {
+	public LocationMessage(Long recipient, Location message) {
 		super(recipient, message);
 	}
 

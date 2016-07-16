@@ -15,7 +15,7 @@ public class ContactMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public ContactMessage(Integer recipient, Contact contact) {
+	public ContactMessage(Long recipient, Contact contact) {
 		super(recipient, contact);
 	}
 
