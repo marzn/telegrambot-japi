@@ -48,9 +48,13 @@ public class BotResponse {
 
 		for (int i = 0; i < length; i++) {
 			JSONObject result = resultArray.getJSONObject(i);
-
-			messages[i] = MessageFactory.fromJSON(result.getJSONObject("message"));
-
+			try{
+				messages[i] = MessageFactory.fromJSON(result.getJSONObject("message"));
+			}
+			catch(Exception e){
+				messages[i] = MessageFactory.fromJSON(new JSONObject());
+			}
+			
 			if (this.updateID < result.getInt("update_id")) {
 				this.updateID = result.getInt("update_id");
 			}
