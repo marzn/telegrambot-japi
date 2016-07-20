@@ -15,7 +15,7 @@ public class ImageMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public ImageMessage(Integer recipient, File message) {
+	public ImageMessage(Long recipient, File message) {
 		super(recipient, message);
 	}
 
@@ -25,7 +25,7 @@ public class ImageMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public ImageMessage(Integer recipient, PhotoSize[] message) {
+	public ImageMessage(Long recipient, PhotoSize[] message) {
 		super(recipient, message);
 	}
 

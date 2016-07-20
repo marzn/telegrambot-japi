@@ -9,7 +9,7 @@ public class UnhandledMessage extends Message {
 	 * @param message
 	 */
 	public UnhandledMessage(Object message) {
-		super(0, message);
+		super((long) 0, message);
 	}
 
 	/**

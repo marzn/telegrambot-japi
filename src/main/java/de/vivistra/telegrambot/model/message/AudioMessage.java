@@ -15,7 +15,7 @@ public class AudioMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public AudioMessage(Integer recipient, File message) {
+	public AudioMessage(Long recipient, File message) {
 		super(recipient, message);
 	}
 
@@ -25,7 +25,7 @@ public class AudioMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public AudioMessage(Integer recipient, Audio message) {
+	public AudioMessage(Long recipient, Audio message) {
 		super(recipient, message);
 	}
 

@@ -10,7 +10,7 @@ import de.vivistra.telegrambot.utils.Tester;
  */
 public class User {
 	// Unique identifier for this user or bot
-	private Integer id;
+	private Long id;
 	// User's or bot's first name
 	private String firstName;
 	// Optional. User's or bot's last name
@@ -26,7 +26,7 @@ public class User {
 	 * @param lastName
 	 * @param userName
 	 */
-	public User(Integer id, String firstName, String lastName, String userName) {
+	public User(Long id, String firstName, String lastName, String userName) {
 		Assert.notNull(id);
 		Assert.notEmpty(firstName);
 
@@ -44,7 +44,7 @@ public class User {
 	 */
 	public static User fromJSON(JSONObject userObject) {
 		//
-		Integer id = userObject.getInt("id");
+		Long id = userObject.getLong("id");
 		String firstName = userObject.getString("first_name");
 
 		// Optional
@@ -59,7 +59,7 @@ public class User {
 	 * 
 	 * @return
 	 */
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 

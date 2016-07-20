@@ -11,7 +11,7 @@ public class TextMessage extends Message {
 	 * @param recipient
 	 * @param message
 	 */
-	public TextMessage(Integer recipient, String message) {
+	public TextMessage(Long recipient, String message) {
 		super(recipient, message);
 	}
 

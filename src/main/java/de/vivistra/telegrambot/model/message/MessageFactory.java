@@ -18,7 +18,7 @@ public class MessageFactory {
 	 */
 	public static Message fromJSON(JSONObject messageObject) {
 
-		Integer recipient = null;
+		Long recipient = null;
 		Message message = null;
 
 		// Text

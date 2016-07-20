@@ -47,7 +47,7 @@ public class TestMessageFactory {
 
 		assertNull(message.getGroupChat());
 
-		User sender = new User(7872355, "Marcel", "", "Marcn");
+		User sender = new User(7872355L, "Marcel", "", "Marcn");
 
 		assertEquals(sender, message.getSender());
 	}
