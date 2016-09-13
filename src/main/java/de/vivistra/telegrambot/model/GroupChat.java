@@ -50,7 +50,7 @@ public class GroupChat {
 	 * 
 	 * @return
 	 */
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
