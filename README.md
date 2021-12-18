@@ -4,7 +4,7 @@
 
 ## Project state
 
-This software is not maintained anymore. Please consider to fork it and take care of it :)
+This software is **not maintained** anymore. Please consider to fork it and take care of it :)
 
 Stay updated with our [changelog](https://github.com/marzn/telegrambot-japi/blob/master/CHANGELOG.md).
 
